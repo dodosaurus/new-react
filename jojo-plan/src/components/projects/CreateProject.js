@@ -5,7 +5,6 @@ import { createProject } from '../../store/actions/projectActions'
 class CreateProject extends Component {
     state = {
         title : "",
-        author : "",
         content : ""
     }
 
@@ -29,10 +28,6 @@ class CreateProject extends Component {
                     <div className="input-field">
                         <label htmlFor="title">Title</label>
                         <input type="text" id="title" onChange={this.handleChange}/>
-                    </div>
-                    <div className="input-field">
-                        <label htmlFor="author">Author</label>
-                        <input type="text" id="author" onChange={this.handleChange}/>
                     </div>
                     <div className="input-field">
                         <label htmlFor="content">Project Content</label>
